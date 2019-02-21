@@ -27,15 +27,13 @@ function validateForm() {
     var errorFound = false;
            
     // Checks if 'lastname' has an invalid value
-    if (inputValue[0].length < 3) {
+    if (inputValue[0].length == 0) {
         errorFound = true;
         highlightError(0);
     }
     
     // Checks if 'gender' has an invalid value
-    // if ( !(inputValue[1] == 'male' || inputValue[1] == 'female' || inputValue[1] == 'unknown') ) {
-    // if ( !(inputValue[1] == 'male' || inputValue[1] == 'female' || inputValue[1] == 'unknown') ) {
-    if ( !genderRadioButtonChecked ) {
+    if (!genderRadioButtonChecked) {
         errorFound = true;
         highlightError(1);
     }
@@ -75,7 +73,7 @@ function checkLastname() {
     
     // Checks if the text length is sufficient and
     // if so, stops higlighting the input element
-    if (inputValue.length >= 3) {
+    if (inputValue.length > 0) {
         resetHighlight(0);
     }
     // If not, highlights the input element
