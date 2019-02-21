@@ -11,8 +11,14 @@ All of the site's features, styles and colors were listed in a requirement docum
 ### Front Page / Etusivu
 Has text arranged into two columns and an image.
 
+![Screenshot](screenshot_etusivu.png)
+
 ### Form / Lomake
 Has text on the left, a text input for the user's last name, radio buttons for the user's gender and a dropdown list for a car brand (including an option for 'other' which opens a text input).
 
+![Screenshot](screenshot_lomake.png)
+
 ### Table / Taulukko
 Has a table of students' credits and grades with a caption under it. Cells and rows can be highlighted by hovering the mouse cursor over them.
+
+![Screenshot](screenshot_taulukko.png)
