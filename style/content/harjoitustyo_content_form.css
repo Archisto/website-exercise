@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This is the CSS for the center area of the form page.
+
+*/
+
+/* Sets the float of the center area's right side */
+#center_right {
+    float: left;
+}
+
+/* Sets the width of the center area's right side's primary header */
+#center_right h1 {
+    width: 100%;
+}
+
+/* Sets the input fields' borders */
+#lastname_text_input, #car_dropdown, #othercar_text_input {
+    border: 1px solid black;
+}
+
+/* Sets the form parts' bottom margins */
+#center_right .form_part {
+    margin-bottom: 20px;
+}
+
+/* Sets the style of the input labels */
+#center_right .input_label {
+    float: left;
+    width: 130px;
+    text-align: right;
+}
+
+/* Makes the input fields and the submit button stay */
+/* on the right side of the input labels */
+#center_right .input_field, #form_submit {
+    margin-left: 140px;
+}
+
+/* Sets the style of the radio button area */
+#center_right .radio_buttons {
+    width: 210px;
+    padding-left: 5px;
+    border: 1px solid white;
+}
+
+/* Sets the size of the text input boxes and the drop-down list */
+#center_right .text_input input, #center_right .dropdown select {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+/* Sets the text input boxes' padding */
+#center_right .text_input input {
+    padding: 1px 1px;
+}
+
+/* Sets the cursor when hovered on the radio buttons */
+#center_right .radio_buttons input {
+    cursor: pointer;
+}
+
+/* Sets the style of the radio buttons' labels */
+#center_right .radio_button_label {
+    
+    /* Sets padding */
+    padding-left: 5px;
+    
+    /* Sets the cursor when hovered on */
+    cursor: pointer;
+}
+
+/* Hides the 'othercar' text input box by default */
+#form_car_other {
+    display: none;
+}
+
+/* Sets the style of the submit button */
+#form_submit {
+    
+    /* Disables the default style */
+    -webkit-appearance: none;
+    
+    /* Sets the font */
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    
+    /* Sets padding and border */
+    padding: 2px 10px;
+    border: 1px solid black;
+    
+    /* Sets the background color (gray) */
+    background-color: #ccc;
+    
+    /* Sets the cursor when hovered on */
+    cursor: pointer;
+}
+
+/* Sets the submit button's background color when hovered on */
+#form_submit:hover {
+    background-color: #ddd;
+}
+
+/* Sets the submit buttons background color when clicked */
+#form_submit:active {
+    background-color: #aaa;
+}
+
+/* SMALLER WINDOW SIZE 1 */
+
+@media screen and (max-width: 965px) {
+    
+    /* Hides the header link list */
+    #header_nav_link_list {
+        display: none;
+    }
+    
+    /* Sets the width of the center area's right side */
+    #center_right {
+        width: auto;
+    }
+}
+
+/* SMALLER WINDOW SIZE 3.5 */
+
+@media screen and (max-width: 675px) {
+    
+    /* Sets the style of the center area */
+    #center {
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+
+    /* Sets the style of the center area's left side */
+    #center_left {
+        float: none;
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    /* Sets the bottom margin of the center area's left side */
+    #center_left ul {
+        margin-bottom: 5px;
+    }
+
+    /* Hides the text on the left side of the center area */
+    /* (the text will not be shown unless the screen becomes wider) */
+    #center_left p {
+        display: none;
+    }
+    
+    /* Sets the style of the right side of the center area */
+    #center_right {
+        width: 100%;
+        clear: both;
+        padding: 0px 0px 0px 10px;
+        border: none;
+        margin-left: 0px;
+    } 
+}
+
+/* SMALLER WINDOW SIZE 6 */
+
+@media screen and (max-width: 390px) {
+    
+    /* Repositions the form's input labels */
+    #center_right .input_label {
+        float: none;
+        width: 100%;
+        text-align: left;
+    } 
+    
+    /* Repositions the form's input fields */
+    #center_right .input_field, #form_submit {
+        margin-left: 0px;
+    }
+}

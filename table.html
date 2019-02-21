@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fi" class="nonresponsive">
+	<head>
+		<meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+        <link rel="stylesheet" href="style/harjoitustyo_common.css">
+		<link rel="stylesheet" href="style/harjoitustyo_header.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_common.css">
+		<link rel="stylesheet" href="style/content/harjoitustyo_content_table.css">
+		<link rel="stylesheet" href="style/harjoitustyo_footer.css">
+		
+		<title>ENNF - Taulukko</title>
+	</head>
+
+	<!--
+
+		HARJOITUSTYÖ
+
+		- 3-sivuinen sivusto: Etusivu, Lomake, Taulukko
+		- Taulukkosivu ei ole responsiivinen, mutta kaksi muuta sivua ovat.
+		- Sivu tulee testata toimivaksi yleisimmillä selaimilla (IE, Edge, Opera, Safari, Firefox ja
+		  Chrome). Näistä uusimmat versiot riittävät – mutta sivujen tulee toimia TAMKin koneille
+		  asennetuilla versioilla, eli sen verran on tuettava taaksepäin esim. IE:tä.
+		- Muut ohjeet Tabulassa.
+		
+		
+		This is the table page.
+		
+	-->
+
+	<body class="nonresponsive">
+		<div id="header">
+            <div id="title_bar">
+                <h1>EX NIHILO NIHIL FIT</h1>
+            </div>
+            <div id="header_nav_link_list">
+                <ul>
+                    <li class="nav_link"><a href="index.html">Etusivu</a></li>
+                    <li class="nav_link"><a href="form.html">Lomake</a></li>
+                    <li class="nav_link"><a class="active" href="table.html">Taulukko</a></li>
+                    <li class="nav_link"><a href="#">Laudantium</a></li>
+                    <li class="nav_link"><a href="#">Quisque</a></li>
+                    <li class="nav_link"><a href="#">Venenatis</a></li>
+                    <li class="nav_link"><a href="#">Dignissim</a></li>
+                    <li class="nav_link"><a href="#">Ultrices</a></li>
+                </ul>
+            </div>
+		</div>
+		<div id="center">
+            <h1>Taulukko</h1>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Läsnäolopisteet</th>
+                    <th>Harjoituspisteet</th>
+                    <th>Välikoepisteet</th>
+                    <th>Loppukoepisteet</th>
+                    <th>Harjoitustyöpisteet</th>
+                    <th>Bonuspisteet</th>
+                    <th>Loppuarvosana</th>
+                </tr>
+                <tr>
+                    <td>Opiskelija 1</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>16</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Opiskelija 2</td>
+                    <td>12</td>
+                    <td>19</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>14</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Opiskelija 3</td>
+                    <td>16</td>
+                    <td>22</td>
+                    <td>14</td>
+                    <td>13</td>
+                    <td>18</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Opiskelija 4</td>
+                    <td>13</td>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>18</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Opiskelija 5</td>
+                    <td>15</td>
+                    <td>23</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Opiskelija 6</td>
+                    <td>13</td>
+                    <td>25</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>20</td>
+                    <td>6</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Opiskelija 7</td>
+                    <td>14</td>
+                    <td>22</td>
+                    <td>16</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Keskiarvo</td>
+                    <td>13,6</td>
+                    <td>22,1</td>
+                    <td>14,1</td>
+                    <td>13,5</td>
+                    <td>17,2</td>
+                    <td>3,4</td>
+                    <td>3,5</td>
+                </tr>
+            </table>
+            <p>Taulukko 1: Opiskelijoiden pisteet ja arvosanat</p>
+		</div>
+		<div id="footer">
+			<div id="footer_first_link_list" class="link_list">
+                <ul>
+                    <li><a href="#">1 Cras metus</a></li>
+                    <li><a href="#">1 Sed aliquet risus</a></li>
+                    <li><a href="#">1 Integer id quam</a></li>
+                    <li><a href="#">1 Morbi mi</a></li>
+                    <li><a href="#">1 Quisque nisl felis</a></li>
+                    <li><a href="#">1 Venenatis tristique</a></li>
+                    <li><a href="#">1 Dignissim in</a></li>
+                    <li><a href="#">1 Ultrices sit amet</a></li>
+                </ul>
+            </div>
+            <div id="footer_second_link_list" class="link_list">
+                <ul>
+                    <li><a href="#">2 Cras metus</a></li>
+                    <li><a href="#">2 Sed aliquet risus</a></li>
+                    <li><a href="#">2 Integer id quam</a></li>
+                    <li><a href="#">2 Morbi mi</a></li>
+                    <li><a href="#">2 Quisque nisl felis</a></li>
+                    <li><a href="#">2 Venenatis tristique</a></li>
+                    <li><a href="#">2 Dignissim in</a></li>
+                    <li><a href="#">2 Ultrices sit amet</a></li>
+                </ul>
+            </div>
+            <div id="footer_third_link_list" class="link_list">
+                <ul>
+                    <li><a href="#">3 Cras metus</a></li>
+                    <li><a href="#">3 Sed aliquet risus</a></li>
+                    <li><a href="#">3 Integer id quam</a></li>
+                    <li><a href="#">3 Morbi mi</a></li>
+                    <li><a href="#">3 Quisque nisl felis</a></li>
+                    <li><a href="#">3 Venenatis tristique</a></li>
+                    <li><a href="#">3 Dignissim in</a></li>
+                    <li><a href="#">3 Ultrices sit amet</a></li>
+                </ul>
+            </div>
+		</div>
+    </body>
+</html>
+

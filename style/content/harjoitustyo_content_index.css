@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This is the CSS for the front page's main content.
+
+*/
+
+/* Sets the text alignment of right side's body text */
+#center_right {
+    margin-left: 240px;
+}
+
+/* Sets the text alignment of right side's body text */
+#center_right p {
+    text-align: justify;
+}
+
+/* Sets the bottom margin of right side's each except the last text field */
+#center_right p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+/* Sets the style of the image div */
+#center_right .image {
+    position: relative; 
+	float: right;
+    margin-left: 10px;
+}
+
+/* Sets the display method of the image */
+#center_right .image img {
+    display: table;
+}
+
+/* Sets the style of the image's caption */
+#center_right .image p {
+    
+    /* Sets the text color */
+    color: white;
+    
+    /* Sets the translucent background color */
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.6);
+    
+    /* Makes the text box stay on the right side of the image */
+    position: absolute;
+    width: 70px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    /* Sets padding */
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+
+/* SMALLER WINDOW SIZE 1 */
+
+@media screen and (max-width: 965px) {
+    
+    /* Hides the header link list */
+    #header_nav_link_list {
+        display: none;
+    }
+}
+
+/* SMALLER WINDOW SIZE 2 */
+
+@media screen and (max-width: 940px) {
+
+    /* Centers the image */
+    #center_right .image {
+        float: none;
+        max-width: 450px;
+        margin: 0px auto 15px auto;
+    }
+}
+
+/* SMALLER WINDOW SIZE 3 */
+
+@media screen and (max-width: 750px) {
+
+    /* Hides the image */
+    #center_right .image {
+        display: none;
+    }
+}
+
+/* SMALLER WINDOW SIZE 4 */
+
+@media screen and (max-width: 600px) {
+    
+    #center {
+        display: table;
+        max-width: 960px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px auto;
+    }
+    
+    #center_left {
+        
+        /* Hides the left side of the center area */
+        /* display: none; */
+        
+        float: none;
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    #center_left ul {
+        margin-bottom: 5px;
+    }
+
+    /* Hides the text on the left side of the center area */
+    /* The text will not be shown unless the screen becomes wider */
+    #center_left p {
+        display: none;
+    }
+    
+    /* Centers the right side of the center area */
+    #center_right {
+        clear: both;
+        padding: 0px 10px;
+        border: none;
+        margin-left: 0px;
+    }
+
+    /* Displays the image */
+    #center_right .image {
+        display: block;
+    }
+}
+
+/* SMALLER WINDOW SIZE 5 */
+
+@media screen and (max-width: 500px) {
+
+    /* Hides the image */
+    #center_right .image {
+        display: none;
+    }
+}

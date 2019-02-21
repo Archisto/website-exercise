@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This CSS adds responsiveness to the content area.
+
+*/
+
+/* Sets the style of the center area's navigation link list */
+#center_left ul {
+    
+    /* Hides the navigation links by default */
+    display: none;
+
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+/* Sets the nav links' display */
+#center_left .nav_link {
+	display: inline;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    bottom: 0px;
+}
+
+/* Sets the left links' style */
+#center_left .nav_link a {
+    
+    /* Sets the display method */
+	display: inline-block;
+    
+    /* Sets the font size */
+    font-size: 18px;
+    
+    /* Sets the text color (dark red) */
+    color: #900;
+
+    /* Sets the box size */
+	width: 100%;
+    box-sizing: border-box;
+    
+    /* Sets padding, border and margin */
+    padding: 2px 0px 2px 5px;
+    border-left: 8px solid orange;
+    border-bottom: 1px dashed orange;
+    margin-bottom: 7px;
+    
+    /* Sets the text's style */
+	text-align: left;
+	text-decoration: none;
+}
+
+/* Sets the currenly active left navigation links' style */
+#center_left .nav_link a.active {
+	background-color: lightgray;
+}
+
+/* Sets the text color when hovered over a left navigation link */
+#center_left .nav_link a:hover {
+	border-left-color: green;
+    background-color: lightgray;
+}
+
+/* Sets the text color when clicked a header link (not current page's) */
+#center_left .nav_link a:not(.active):active {
+	background-color: orange;
+    color: white;
+}
+
+
+/* SMALLER WINDOW SIZE 1 */
+
+@media screen and (max-width: 965px) {
+    
+    /* Sets the center area's margin */
+    #center {
+        margin: 0px;
+    }
+    
+    /* Displays the navigation links on the left side of the center area */
+    #center_left ul {
+        display: block;
+    }
+}

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This the footer's CSS.
+
+*/
+
+/* Sets the whole footer's style */
+#footer {
+    
+    /* Disables floating */
+	float: none;
+    
+    /* Sets the background color (gray) */
+    background-color: #ccc;
+    
+    /* Sets the top border */
+	border-top: 5px dotted orange;
+    
+    /* Centers the link lists */
+    text-align: center;
+}
+
+/* Sets each link list div's style */
+#footer .link_list {
+    display: inline-block;
+    width: 180px;
+    margin: 22px 30px;
+}
+
+/* Sets each link list's style */
+#footer .link_list ul {
+    width: 100%;
+    padding: 0px;
+}
+
+/* Sets the lists' individual links' style */
+#footer .link_list li {
+    
+    /* Sets the display type */
+    display: table;
+    
+    /* Sets width */
+    width: 100%;
+    box-sizing: border-box;
+    
+    /* Sets the font size */
+    font-size: 12px;
+    
+    /* Sets padding and border */
+    padding: 4px 0px 4px 10px;
+    border-top: 2px dotted black;
+    
+    /* Aligns text to the left */
+    text-align: left;
+}
+
+/* Sets each link list's last child's bottom border */
+#footer .link_list li:last-child {
+    border-bottom: 2px dotted black;
+}
+
+/* Sets the lists' individual links' text's style */
+#footer .link_list li a {
+    color: #c00;
+    list-style-type: none;
+}

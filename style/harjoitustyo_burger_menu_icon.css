@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+    This CSS creates the burger menu icon.
+
+*/
+
+/* Creates the main icon part */
+#burger_menu_icon {
+    
+    /* Sets the size */
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    
+    /* Sets the background color */
+    background-color: transparent;
+    
+    /* Sets border */
+    border: 5px solid white;
+    border-radius: 10px;
+    
+    /* Sets the cursor when hovered on */
+    cursor: pointer;
+}
+
+/* Creates the inner icon parts */
+#burger_menu_icon div {
+    
+    /* Makes the inner icon parts stay centered within the main part */
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    
+    /* Sets height */
+    height: 5px;
+    
+    /* Sets the background color */
+    background-color: white;
+    
+    /* Removes border */
+    border: none;
+}
+
+/* Places the inner icon parts */
+#burger_menu_icon div:nth-child(1) {
+    top: 5px;
+}
+#burger_menu_icon div:nth-child(2) {
+    top: 15px;
+}
+#burger_menu_icon div:nth-child(3) {
+    bottom: 5px;
+}
+
+/* Changes the icon's color when active */
+#burger_menu_icon:hover,
+#burger_menu_icon:active {
+    border-color: yellow;
+}
+#burger_menu_icon:hover div,
+#burger_menu_icon:active div {
+    background-color: yellow;
+}

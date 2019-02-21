@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fi">
+	<head>
+		<meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+		<link rel="stylesheet" href="style/harjoitustyo_common.css">
+		<link rel="stylesheet" href="style/harjoitustyo_header.css">
+		<link rel="stylesheet" href="style/harjoitustyo_header_index.css">
+		<link rel="stylesheet" href="style/harjoitustyo_burger_menu_icon.css">
+		<link rel="stylesheet" href="style/content/harjoitustyo_content_common.css">
+		<link rel="stylesheet" href="style/content/harjoitustyo_content_common_resp.css">
+		<link rel="stylesheet" href="style/content/harjoitustyo_content_index.css">
+		<link rel="stylesheet" href="style/harjoitustyo_footer.css">
+		<script src="scripts/burger_menu_toggle_common.js" ></script>
+		<script src="scripts/burger_menu_toggle_index.js"></script>
+        
+        <!-- Shows or hides the burger menu when the window is resized -->
+        <script>
+            window.addEventListener('resize', updateBurgerMenu);
+        </script>
+		
+		<title>ENNF - Etusivu</title>
+	</head>
+
+	<!--
+
+		HARJOITUSTYÖ
+
+		- 3-sivuinen sivusto: Etusivu, Lomake, Taulukko
+		- Taulukkosivu ei ole responsiivinen, mutta kaksi muuta sivua ovat.
+		- Sivu tulee testata toimivaksi yleisimmillä selaimilla (IE, Edge, Opera, Safari, Firefox ja
+		  Chrome). Näistä uusimmat versiot riittävät – mutta sivujen tulee toimia TAMKin koneille
+		  asennetuilla versioilla, eli sen verran on tuettava taaksepäin esim. IE:tä.
+		- Muut ohjeet Tabulassa.
+		
+		
+		This is the front page.
+		
+	-->
+
+	<body onload="resetBurgerMenu()">
+		<div id="header">
+            <div id="title_bar">
+                <div id="burger_menu_icon" onclick="toggleBurgerMenu()" onmouseover="burgerOn()" onmouseleave="burgerOff()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1>EX NIHILO NIHIL FIT</h1>
+            </div>
+			<!-- The navigation link list does not stay exactly on the bottom of the header -->
+			<!-- on different browsers, on different zoom levels. I tried to fix it but couldn't -->
+			<!-- find a solution that didn't break some other thing. This is the best I could do. -->
+            <div id="header_nav_link_list">
+                <ul>
+                    <li class="nav_link"><a class="active" href="index.html">Etusivu</a></li>
+                    <li class="nav_link"><a href="form.html">Lomake</a></li>
+                    <li class="nav_link"><a href="table.html">Taulukko</a></li>
+                    <li class="nav_link"><a href="#">Laudantium</a></li>
+                    <li class="nav_link"><a href="#">Quisque</a></li>
+                    <li class="nav_link"><a href="#">Venenatis</a></li>
+                    <li class="nav_link"><a href="#">Dignissim</a></li>
+                    <li class="nav_link"><a href="#">Ultrices</a></li>
+                </ul>
+            </div>
+		</div>
+		<div id="center">
+			<div id="center_left">
+                <ul>
+                    <li class="nav_link"><a class="active" href="index.html">Etusivu</a></li>
+                    <li class="nav_link"><a href="form.html">Lomake</a></li>
+                    <li class="nav_link"><a href="table.html">Taulukko</a></li>
+                    <li class="nav_link"><a href="#">Laudantium</a></li>
+                    <li class="nav_link"><a href="#">Quisque</a></li>
+                    <li class="nav_link"><a href="#">Venenatis</a></li>
+                    <li class="nav_link"><a href="#">Dignissim</a></li>
+                    <li class="nav_link"><a href="#">Ultrices</a></li>
+                </ul>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+				beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+				odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+				Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+				sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+				voluptatem? </p>
+			</div>
+			<div id="center_right">
+                <h1>Etusivu</h1>
+                <p>Qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+                distinctio.</p>
+                <div class="image">
+                    <img src="kuva.jpg" alt="A courtyard in Italy" width="450"/>
+                    <p>Hasellus tempus pretium efficitur mauris non magna volutpat</p>
+                </div>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed viverra, sem et
+                tempus porta, tortor nunc tempus massa, venenatis semper purus tellus sed urna. Phasellus eget
+                magna a ipsum varius pharetra.</p>
+                <h2>Vestibulum congue non metus in volutpat</h2>
+                <p>Vestibulum sodales auctor posuere. Curabitur ipsum est, scelerisque nec ullamcorper quis,
+                pellentesque vitae turpis. Etiam in tortor consectetur, condimentum ex id, mollis eros. Aliquam
+                in viverra augue. Mauris consectetur sem sed viverra auctor. Curabitur commodo convallis nunc,
+                at auctor nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                mus. Aliquam pellentesque, augue nec mollis condimentum, tellus augue lobortis nisi, eu
+                molestie nulla lectus vel nisi. Aliquam tempor dolor eget elementum mollis.
+                Phasellus tempus pretium efficitur. Mauris non magna volutpat, sollicitudin nulla vitae, luctus
+                magna. Sed laoreet gravida velit, lobortis mollis magna. Phasellus vulputate leo at est posuere
+                mollis. Duis dolor ante, venenatis quis eleifend nec, blandit ac magna.</p>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="footer_first_link_list" class="link_list">
+                <ul>
+                    <li><a href="#">1 Cras metus</a></li>
+                    <li><a href="#">1 Sed aliquet risus</a></li>
+                    <li><a href="#">1 Integer id quam</a></li>
+                    <li><a href="#">1 Morbi mi</a></li>
+                    <li><a href="#">1 Quisque nisl felis</a></li>
+                    <li><a href="#">1 Venenatis tristique</a></li>
+                    <li><a href="#">1 Dignissim in</a></li>
+                    <li><a href="#">1 Ultrices sit amet</a></li>
+                </ul>
+            </div>
+            <div id="footer_second_link_list" class="link_list">
+                <ul>
+                    <li><a href="#">2 Cras metus</a></li>
+                    <li><a href="#">2 Sed aliquet risus</a></li>
+                    <li><a href="#">2 Integer id quam</a></li>
+                    <li><a href="#">2 Morbi mi</a></li>
+                    <li><a href="#">2 Quisque nisl felis</a></li>
+                    <li><a href="#">2 Venenatis tristique</a></li>
+                    <li><a href="#">2 Dignissim in</a></li>
+                    <li><a href="#">2 Ultrices sit amet</a></li>
+                </ul>
+            </div>
+            <div id="footer_third_link_list" class="link_list">
+                <ul>
+                    <li><a href="#">3 Cras metus</a></li>
+                    <li><a href="#">3 Sed aliquet risus</a></li>
+                    <li><a href="#">3 Integer id quam</a></li>
+                    <li><a href="#">3 Morbi mi</a></li>
+                    <li><a href="#">3 Quisque nisl felis</a></li>
+                    <li><a href="#">3 Venenatis tristique</a></li>
+                    <li><a href="#">3 Dignissim in</a></li>
+                    <li><a href="#">3 Ultrices sit amet</a></li>
+                </ul>
+            </div>
+		</div>
+    </body>
+</html>
+

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This is the CSS for the center area of each page.
+
+*/
+
+/* Sets the primary headline's style */
+#center h1 {
+    font-size: 32px;
+    padding-top: 5px;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+/* Sets the secondary headline's style */
+#center h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Sets the center area's style */
+#center {
+	/* display: table; */
+    max-width: 960px;
+    padding: 10px 10px 30px 10px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/* Sets the center area's halves' styles */
+#center > div {
+	margin-top: 0px;
+	box-sizing: border-box;
+}
+
+/* Sets the style of the center area's left side */
+#center_left {
+    float: left;
+    width: 240px;
+	padding-right: 15px;
+}
+
+/* Sets the center area's right side's style */
+#center_right {
+	max-width: 720px;
+	padding-left: 25px;
+	border-left: 5px dotted orange;
+}

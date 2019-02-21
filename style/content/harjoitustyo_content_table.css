@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This is the CSS for the table page's content.
+
+*/
+
+/* Sets the center areas width */
+#center {
+    width: 960px;
+}
+
+/* Sets the style of the table's caption text */
+#center p {
+    
+    /* Sets the font */
+    font-family: 'Courier New', sans-serif;
+    
+    /* Sets the text to be in italics */
+    font-style: italic;
+
+    /* Centers the caption */
+    margin: 0px auto;
+    display: table;
+}
+
+/* Sets the style of the table */
+#center table {
+    
+    /* Sets the table cell text font */
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    
+    /* Keeps the cells' text always on a single line */
+    white-space: nowrap;
+    
+    /* Sets the table's width */
+    width: 100%;
+    
+    /* Merges the cells' borders */
+    border-collapse: collapse;
+}
+
+/* Sets the style of each cell */
+#center th, #center td {
+    padding: 5px;
+    border: 1px solid #900;
+    text-align: center;
+}
+
+/* Sets the style of the first row and column */
+#center th, #center td:first-child {
+    font-weight: bold;
+}
+
+/* Sets each except the first row's first cell's text to be in italics... */
+#center td:first-child {
+    font-style: italic;
+}
+/* ...except the last row's first cell's text */
+#center tr:last-child td:first-child {
+    font-style: normal;
+}
+
+/* Sets the color of every other row except the first and the last */
+#center tr:nth-child(odd):not(:first-child):not(:last-child):not(:hover) {
+    background-color: #ccc;
+}
+
+/* Sets the color of a row when the cursor is hovered on it */
+/* (not the first row) */
+#center tr:not(:first-child):hover {
+    background-color: #ff9;
+}
+
+/* Sets the style of a cell when the cursor is hovered on it */
+/* (not the first row, not the first column) */
+#center td:not(:first-child):hover {
+    color: #900;
+    background-color: #ff0;
+    font-weight: bold;
+}

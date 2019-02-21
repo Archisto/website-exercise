@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This is the common CSS, applicable in every page.
+
+*/
+
+/* Sets the padding and margin of all elements */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Sets the width of the html and the body */
+html, body {
+    width: 100%;
+    min-width: 365px;
+}
+
+/* Sets the style of the html */
+html {
+    height: 100%;
+    background-color: #ccc;
+}
+
+/* Sets the body's background color */
+body {
+    background-color: white;
+}
+
+/* Sets the width of a non-responsive page */
+/* (NOTE: Works fine only with 1920px wide monitors) */
+.nonresponsive {
+    width: 1920px;
+}
+
+/* FONTS */
+
+/* Sets the common style for all fonts */
+* {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1.15;
+}
+
+/* Sets the style of the font for headers and links */
+#header, h1, h2, .nav_link a, #footer {
+    font-family: 'Muli', sans-serif;
+    font-size: 22px;
+}
+
+/* Sets the style of the font for body text and forms */
+p, form {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+}

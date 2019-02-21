@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+/*
+
+	HARJOITUSTYÖ
+	
+	This is the header's CSS.
+
+*/
+
+/* Sets the style of the entire header */
+#header {
+    
+    /* Sets the positioning type */
+    position: relative;
+    
+    /* Sets the size */
+	width: 100%;
+	height: auto;
+    
+    /* Sets padding and margin */
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Sets the style of the title bar */
+#title_bar {
+    
+    /* Sets the size */
+    width: 100%;
+    height: 100px;
+    
+    /* Sets the background color (red) */
+    background-color: #c00;
+    
+    /* Sets text's line-height */
+    line-height: 100px;
+    
+    /* Aligns text to center */
+    text-align: center;
+}
+
+/* Sets the style of the header title */
+#title_bar h1 {
+    
+    /* Sets the display type */
+    display: inline-block;
+    
+    /* Sets the font size */
+    font-size: 42px;
+    
+    /* Sets the text color */
+	color: orange;
+    
+    /* Sets size limits (may be unnecessary) */
+    /* min-width: 200px; */
+    max-height: 100px;
+    overflow-y: hidden;
+    
+    /* Sets the text's style */
+    line-height: 35px;
+    vertical-align: middle;
+	text-decoration: none;
+}
+
+/* Places the burger menu icon (created with HTML + CSS) */
+#burger_menu_icon {
+    
+    /* Hidden by default */
+	display: none;
+    
+    /* Sets the position */
+    position: absolute;
+    float: left;
+    margin: 28px 15px;
+}
+
+/* Sets the style of the header's navigation link bar */
+#header_nav_link_list {
+    
+    /* Sets the size */
+    width: 100%;
+    height: 30px;
+    
+    /* Sets the background color (red) */
+    background-color: #c00;
+}
+
+/* Sets the style of the header's navigation link list */
+#header_nav_link_list ul {
+
+    /* Sets the maximum width of the link list */
+    /* (the same as the center area's) */
+    max-width: 960px;
+    
+    /* Sets padding */
+    padding: 0px 10px;
+    
+    /* Centers the link list */
+    margin: 0px auto;
+
+    /* Removes the default list style */
+    list-style-type: none;
+}
+
+/* Sets the style of the nav links */
+#header_nav_link_list .nav_link {
+    
+    /* Sets the display type */
+	display: inline;
+    
+    /* Makes the link to stay at the bottom of its container */
+    bottom: 0px;
+    
+    /* Sets padding and margin */
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Sets the header links' style */
+#header_nav_link_list .nav_link a {
+    
+    /* Sets the display method */
+	display: inline-block;
+    
+    /* Sets width */
+	width: 110px;
+    
+    /* Sets the font size */
+    font-size: 14px;
+    
+    /* Sets the text color */
+	color: white;
+    
+    /* Sets the background color */
+    background-color: orange;
+    
+    /* Sets padding and border */
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-bottom: 5px solid orange;
+    
+    /* Aligns text to center */
+	text-align: center;
+}
+
+/* Sets the current page's header link's colors */
+#header_nav_link_list .nav_link a.active {
+	color: #900;
+	background-color: white;
+}
+
+/* Sets the text color when hovered over the current page's header link */
+#header_nav_link_list .nav_link a.active:hover {
+	border-color: green;
+}
+
+/* Sets header links' hover style (not current page's) */
+#header_nav_link_list .nav_link a:not(.active):hover {
+
+    /* Sets the text color */
+	color: orange;
+    
+    /* Sets the background color */
+	background-color: white;
+    
+    /* Sets the border color */
+    border-color: green;
+    
+    /* Sets padding */
+	padding-bottom: 2px;
+    
+}
+
+/* Sets the text color when clicked a header link (not current page's) */
+#header_nav_link_list .nav_link a:not(.active):active {
+	color: #900;
+}
