@@ -9,12 +9,13 @@ All of the site's features, styles and colors were listed in a requirement docum
 ## Pages
 
 ### Front Page / Etusivu
-Has text arranged into two columns and an image.
+Has text arranged into two columns and an image with a caption.
 
 ![Screenshot](screenshot_etusivu.png)
 
 ### Form / Lomake
-Has text on the left, a text input for the user's last name, radio buttons for the user's gender and a dropdown list for a car brand (including an option for 'other' which opens a text input).
+Has text on the left, a text input for the user's last name, radio buttons for the user's gender, a dropdown list for a car brand (including an option for 'other' which opens a text input) and a submit button which displays a browser alert.
+Empty and incorrectly filled fields are highlighted.
 
 ![Screenshot](screenshot_lomake.png)
 
