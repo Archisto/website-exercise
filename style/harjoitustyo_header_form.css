@@ -2,8 +2,8 @@
 
 /*
 
-	HARJOITUSTYÖ
-	
+    HARJOITUSTYÖ
+
     This CSS adds additional responsiveness to the header of the form page.
 
 */
@@ -11,17 +11,17 @@
 /* SMALLER WINDOW SIZE 3.5 */
 
 @media screen and (max-width: 675px) {
-    
+
     /* Sets the header title's style */
     #title_bar h1 {
-        
+
         /* Makes the header title's font size smaller */
         font-size: 35px;
-        
+
         /* Sets margin to the left and right side of the header title */
-        margin: 0px 74px; 
+        margin: 0px 74px;
     }
-    
+
     /* Shows the burger menu icon */
     #burger_menu_icon {
         display: block;

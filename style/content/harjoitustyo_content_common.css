@@ -2,9 +2,9 @@
 
 /*
 
-	HARJOITUSTYÖ
-	
-	This is the CSS for the center area of each page.
+    HARJOITUSTYÖ
+
+    This is the CSS for the center area of each page.
 
 */
 
@@ -24,7 +24,7 @@
 
 /* Sets the center area's style */
 #center {
-	/* display: table; */
+    /* display: table; */
     max-width: 960px;
     padding: 10px 10px 30px 10px;
     margin: 0px auto;
@@ -33,20 +33,20 @@
 
 /* Sets the center area's halves' styles */
 #center > div {
-	margin-top: 0px;
-	box-sizing: border-box;
+    margin-top: 0px;
+    box-sizing: border-box;
 }
 
 /* Sets the style of the center area's left side */
 #center_left {
     float: left;
     width: 240px;
-	padding-right: 15px;
+    padding-right: 15px;
 }
 
 /* Sets the center area's right side's style */
 #center_right {
-	max-width: 720px;
-	padding-left: 25px;
-	border-left: 5px dotted orange;
+    max-width: 720px;
+    padding-left: 25px;
+    border-left: 5px dotted orange;
 }

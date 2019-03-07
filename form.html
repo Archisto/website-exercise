@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="fi">
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
         <link rel="stylesheet" href="style/harjoitustyo_common.css">
-		<link rel="stylesheet" href="style/harjoitustyo_header.css">
-		<link rel="stylesheet" href="style/harjoitustyo_header_form.css">
+        <link rel="stylesheet" href="style/harjoitustyo_header.css">
+        <link rel="stylesheet" href="style/harjoitustyo_header_form.css">
         <link rel="stylesheet" href="style/harjoitustyo_burger_menu_icon.css">
-		<link rel="stylesheet" href="style/content/harjoitustyo_content_common.css">
-		<link rel="stylesheet" href="style/content/harjoitustyo_content_common_resp.css">
-		<link rel="stylesheet" href="style/content/harjoitustyo_content_form.css">
-		<link rel="stylesheet" href="style/harjoitustyo_footer.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_common.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_common_resp.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_form.css">
+        <link rel="stylesheet" href="style/harjoitustyo_footer.css">
         <script src="scripts/burger_menu_toggle_common.js"></script>
         <script src="scripts/burger_menu_toggle_form.js"></script>
         <script src="scripts/form_handler.js"></script>
-        
+
         <!-- Shows or hides the burger menu when the window is resized -->
         <script>
             window.addEventListener('resize', updateBurgerMenu);
         </script>
-		
-		<title>ENNF - Lomake</title>
-	</head>
 
-	<!--
+        <title>ENNF - Lomake</title>
+    </head>
 
-		HARJOITUSTYÖ
+    <!--
 
-		- 3-sivuinen sivusto: Etusivu, Lomake, Taulukko
-		- Taulukkosivu ei ole responsiivinen, mutta kaksi muuta sivua ovat.
-		- Sivu tulee testata toimivaksi yleisimmillä selaimilla (IE, Edge, Opera, Safari, Firefox ja
-		  Chrome). Näistä uusimmat versiot riittävät – mutta sivujen tulee toimia TAMKin koneille
-		  asennetuilla versioilla, eli sen verran on tuettava taaksepäin esim. IE:tä.
-		- Muut ohjeet Tabulassa.
-		
-		
-		This is the form page.
-		
-	-->
+        HARJOITUSTYÖ
 
-	<body onload="resetBurgerMenu()">
-		<div id="header">
+        - 3-sivuinen sivusto: Etusivu, Lomake, Taulukko
+        - Taulukkosivu ei ole responsiivinen, mutta kaksi muuta sivua ovat.
+        - Sivu tulee testata toimivaksi yleisimmillä selaimilla (IE, Edge, Opera, Safari, Firefox ja
+          Chrome). Näistä uusimmat versiot riittävät – mutta sivujen tulee toimia TAMKin koneille
+          asennetuilla versioilla, eli sen verran on tuettava taaksepäin esim. IE:tä.
+        - Muut ohjeet Tabulassa.
+
+
+        This is the form page.
+
+    -->
+
+    <body onload="resetBurgerMenu()">
+        <div id="header">
             <div id="title_bar">
                 <div id="burger_menu_icon" onclick="toggleBurgerMenu()" onmouseover="burgerOn()" onmouseleave="burgerOff()">
                     <div></div>
@@ -62,8 +62,8 @@
                     <li class="nav_link"><a href="#">Ultrices</a></li>
                 </ul>
             </div>
-		</div>
-		<div id="center">
+        </div>
+        <div id="center">
             <div id="center_left">
                 <ul>
                     <li class="nav_link"><a href="index.html">Etusivu</a></li>
@@ -75,25 +75,25 @@
                     <li class="nav_link"><a href="#">Dignissim</a></li>
                     <li class="nav_link"><a href="#">Ultrices</a></li>
                 </ul>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-				beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-				odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-				Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-				sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-				voluptatem? </p>
-			</div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem?</p>
+            </div>
             <div id="center_right">
                 <h1>Lomake</h1>
                 <form name="center_form" id="center_form" onsubmit="return validateForm()">
-                
+
                     <div id="form_lastname" class="form_part">
                         <div class="input_label">Sukunimesi:</div>
                         <div class="input_field text_input">
                             <input type="text" id="lastname_text_input" name="lastname" value="" onchange="checkLastname()">
                         </div>
                     </div>
-                    
+
                     <div id="form_gender" class="form_part">
                         <div class="input_label">Sukupuolesi:</div>
                         <div id="gender_radio_buttons" class="input_field radio_buttons" onchange="checkGenderRadioButtons()">
@@ -107,7 +107,7 @@
                             <a class="radio_button_label" onclick="selectRadioButton(2)">En halua sanoa</a>
                         </div>
                     </div>
-                    
+
                     <div id="form_car" class="form_part">
                         <div class="input_label">Autosi:</div>
                         <div class="input_field dropdown">
@@ -122,59 +122,21 @@
                             </select>
                         </div>
                     </div>
-                    
+
                     <div id="form_car_other" class="form_part">
                         <div class="input_label">Muu, mikä?</div>
                         <div class="input_field text_input">
                             <input id="othercar_text_input" type="text" name="othercar" value="" onchange="checkOthercar()">
                         </div>
                     </div>
-                    
+
                     <input id="form_submit" type="submit" value="Lähetä">
-                
-                    <!-- <div id="form_lastname">
-                        Sukunimesi:<br>
-                        <input type="text" name="lastname" value="">
-                        <br><br>
-                    </div>
-                    <div id="form_gender">
-                        Sukupuolesi:<br>
-                        <div>
-                            <input type="radio" id="gender_male" name="gender" value="male">
-                            Mies
-                            <br>
-                            <input type="radio" id="gender_female" name="gender" value="female">
-                            Nainen
-                            <br>
-                            <input type="radio" id="gender_unknown" name="gender" value="unknown">
-                            En halua sanoa
-                        </div>
-                    </div>
-                    <br>
-                    <div id="form_car">
-                        Autosi:<br>
-                        <select name="car">
-                          <option value="blank">Valitse automerkkisi</option>
-                          <option value="lada">Lada</option>
-                          <option value="mosse">Mosse</option>
-                          <option value="volga">Volga</option>
-                          <option value="vartburg">Vartburg</option>
-                          <option value="ferrari">Ferrari</option>
-                          <option value="other">Muu</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div id="form_car_other">
-                        Muu, mikä?<br>
-                        <input type="text" name="othercar" value="">
-                    </div>
-                    <br>
-                    <input id="form_submit" type="submit" value="Lähetä"> -->
-                </form> 
+
+                </form>
             </div>
-		</div>
-		<div id="footer">
-			<div id="footer_first_link_list" class="link_list">
+        </div>
+        <div id="footer">
+            <div id="footer_first_link_list" class="link_list">
                 <ul>
                     <li><a href="#">1 Cras metus</a></li>
                     <li><a href="#">1 Sed aliquet risus</a></li>
@@ -210,7 +172,6 @@
                     <li><a href="#">3 Ultrices sit amet</a></li>
                 </ul>
             </div>
-		</div>
+        </div>
     </body>
 </html>
-

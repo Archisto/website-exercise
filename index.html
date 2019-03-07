@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="fi">
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-		<link rel="stylesheet" href="style/harjoitustyo_common.css">
-		<link rel="stylesheet" href="style/harjoitustyo_header.css">
-		<link rel="stylesheet" href="style/harjoitustyo_header_index.css">
-		<link rel="stylesheet" href="style/harjoitustyo_burger_menu_icon.css">
-		<link rel="stylesheet" href="style/content/harjoitustyo_content_common.css">
-		<link rel="stylesheet" href="style/content/harjoitustyo_content_common_resp.css">
-		<link rel="stylesheet" href="style/content/harjoitustyo_content_index.css">
-		<link rel="stylesheet" href="style/harjoitustyo_footer.css">
-		<script src="scripts/burger_menu_toggle_common.js" ></script>
-		<script src="scripts/burger_menu_toggle_index.js"></script>
-        
+        <link rel="stylesheet" href="style/harjoitustyo_common.css">
+        <link rel="stylesheet" href="style/harjoitustyo_header.css">
+        <link rel="stylesheet" href="style/harjoitustyo_header_index.css">
+        <link rel="stylesheet" href="style/harjoitustyo_burger_menu_icon.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_common.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_common_resp.css">
+        <link rel="stylesheet" href="style/content/harjoitustyo_content_index.css">
+        <link rel="stylesheet" href="style/harjoitustyo_footer.css">
+        <script src="scripts/burger_menu_toggle_common.js"></script>
+        <script src="scripts/burger_menu_toggle_index.js"></script>
+
         <!-- Shows or hides the burger menu when the window is resized -->
         <script>
             window.addEventListener('resize', updateBurgerMenu);
         </script>
-		
-		<title>ENNF - Etusivu</title>
-	</head>
 
-	<!--
+        <title>ENNF - Etusivu</title>
+    </head>
 
-		HARJOITUSTYÖ
+    <!--
 
-		- 3-sivuinen sivusto: Etusivu, Lomake, Taulukko
-		- Taulukkosivu ei ole responsiivinen, mutta kaksi muuta sivua ovat.
-		- Sivu tulee testata toimivaksi yleisimmillä selaimilla (IE, Edge, Opera, Safari, Firefox ja
-		  Chrome). Näistä uusimmat versiot riittävät – mutta sivujen tulee toimia TAMKin koneille
-		  asennetuilla versioilla, eli sen verran on tuettava taaksepäin esim. IE:tä.
-		- Muut ohjeet Tabulassa.
-		
-		
-		This is the front page.
-		
-	-->
+        HARJOITUSTYÖ
 
-	<body onload="resetBurgerMenu()">
-		<div id="header">
+        - 3-sivuinen sivusto: Etusivu, Lomake, Taulukko
+        - Taulukkosivu ei ole responsiivinen, mutta kaksi muuta sivua ovat.
+        - Sivu tulee testata toimivaksi yleisimmillä selaimilla (IE, Edge, Opera, Safari, Firefox ja
+          Chrome). Näistä uusimmat versiot riittävät – mutta sivujen tulee toimia TAMKin koneille
+          asennetuilla versioilla, eli sen verran on tuettava taaksepäin esim. IE:tä.
+        - Muut ohjeet Tabulassa.
+
+
+        This is the front page.
+
+    -->
+
+    <body onload="resetBurgerMenu()">
+        <div id="header">
             <div id="title_bar">
                 <div id="burger_menu_icon" onclick="toggleBurgerMenu()" onmouseover="burgerOn()" onmouseleave="burgerOff()">
                     <div></div>
@@ -49,9 +49,9 @@
                 </div>
                 <h1>EX NIHILO NIHIL FIT</h1>
             </div>
-			<!-- The navigation link list does not stay exactly on the bottom of the header -->
-			<!-- on different browsers, on different zoom levels. I tried to fix it but couldn't -->
-			<!-- find a solution that didn't break some other thing. This is the best I could do. -->
+            <!-- The navigation link list does not stay exactly on the bottom of the header -->
+            <!-- on different browsers, on different zoom levels. I tried to fix it but couldn't -->
+            <!-- find a solution that didn't break some other thing. This is the best I could do. -->
             <div id="header_nav_link_list">
                 <ul>
                     <li class="nav_link"><a class="active" href="index.html">Etusivu</a></li>
@@ -64,9 +64,9 @@
                     <li class="nav_link"><a href="#">Ultrices</a></li>
                 </ul>
             </div>
-		</div>
-		<div id="center">
-			<div id="center_left">
+        </div>
+        <div id="center">
+            <div id="center_left">
                 <ul>
                     <li class="nav_link"><a class="active" href="index.html">Etusivu</a></li>
                     <li class="nav_link"><a href="form.html">Lomake</a></li>
@@ -77,15 +77,15 @@
                     <li class="nav_link"><a href="#">Dignissim</a></li>
                     <li class="nav_link"><a href="#">Ultrices</a></li>
                 </ul>
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-				laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-				beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-				odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-				Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-				sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-				voluptatem? </p>
-			</div>
-			<div id="center_right">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem?</p>
+            </div>
+            <div id="center_right">
                 <h1>Etusivu</h1>
                 <p>Qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
                 excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
@@ -114,10 +114,10 @@
                 Phasellus tempus pretium efficitur. Mauris non magna volutpat, sollicitudin nulla vitae, luctus
                 magna. Sed laoreet gravida velit, lobortis mollis magna. Phasellus vulputate leo at est posuere
                 mollis. Duis dolor ante, venenatis quis eleifend nec, blandit ac magna.</p>
-			</div>
-		</div>
-		<div id="footer">
-			<div id="footer_first_link_list" class="link_list">
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer_first_link_list" class="link_list">
                 <ul>
                     <li><a href="#">1 Cras metus</a></li>
                     <li><a href="#">1 Sed aliquet risus</a></li>
@@ -153,7 +153,6 @@
                     <li><a href="#">3 Ultrices sit amet</a></li>
                 </ul>
             </div>
-		</div>
+        </div>
     </body>
 </html>
-
